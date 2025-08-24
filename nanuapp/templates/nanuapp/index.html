@@ -1,0 +1,349 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}Home | Na Nu Printing Company{% endblock page_title %}
+
+{% block content %}
+<!--  Page Content, class footer-fixed if footer is fixed  -->
+<div id="page-content" class="header-static footer-fixed">
+    <!--  Slider  -->
+    <div id="flexslider" class="fullpage-wrap small">
+        <ul class="slides">
+            <li style="background-image:url({% static 'nnsgapp/img/service1.jpg' %})">
+                <div class="text left typed">
+                    <h2 class="title white left margin-bottom">global reach</h2>
+                    <h1 class="medium white ">We are Na Nu Group</h1>
+                    <p><span id="typed" class="big white" data-typed-first="specializing in high-quality printing"
+                            data-typed-second="specializing in high-quality printing"></span></p>
+                    <p class="heading white left margin-bottom">proud to be a leading provider of
+                        high-quality printing services and innovative printing solutions.</p>
+                    <a href="{% url 'about' %}" class="btn-alt small active margin-null">Read More</a>
+                </div>
+                <div class="gradient dark"></div>
+            </li>
+        </ul>
+    </div>
+    <!--  END Slider  -->
+    <!--  Home Wrap -->
+    <div id="home-wrap" class="content-section fullpage-wrap">
+        <!-- Counters -->
+        <div class="row margin-leftright-null">
+            <div class="bg-img overlay responsive"
+                style="background-image:url({% static 'nnsgapp/img/service4.jpg' %})">
+                <!--  Counters  -->
+                <div class="col-md-12 padding-leftright-null">
+                    <div class="text text-center">
+                        <div id="counters" class="row">
+                            <div class="col-sm-3">
+                                <div class="statistic">
+                                    <i
+                                        class="icon ion-ios-color-filter-outline service big white margin-bottom-null"></i>
+                                    <span class="white" data-from="0" data-to="2">&nbsp;</span>
+                                    <p class="heading grey-light">Opened in Vietnam</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="statistic">
+                                    <i class="icon ion-ios-pie-outline service big white margin-bottom-null"></i>
+                                    <span class="white" data-from="0" data-to="17">&nbsp;</span>
+                                    <p class="heading grey-light">Years of Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="statistic">
+                                    <i class="icon ion-ios-bolt-outline service big white margin-bottom-null"></i>
+                                    <span class="white" data-from="0" data-to="207">&nbsp;</span>
+                                    <p class="heading grey-light">Products per year</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="statistic">
+                                    <i class="icon ion-ios-pricetags-outline service big white margin-bottom-null"></i>
+                                    <span class="white" data-from="0" data-to="600">&nbsp;</span>
+                                    <p class="heading grey-light">Employees</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  END Counters  -->
+            </div>
+        </div>
+        <!-- END Counters -->
+        <!-- Services -->
+        <div class="row no-margin">
+            <div class="col-md-12 padding-leftright-null">
+                <div class="col-md-4 padding-leftright-null">
+                    <div class="text padding-md-bottom-null">
+                        <i class="icon ion-ios-analytics-outline service material left"></i>
+                        <div class="service-content">
+                            <h6 class="heading  margin-bottom-extrasmall">Business Goals</h6>
+                            <p class="margin-bottom-null">Our goal is to print products that will always made our
+                                customers satisfy on term good quality and fastest delivery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 padding-leftright-null">
+                    <div class="text padding-md-bottom-null">
+                        <i class="icon ion-ios-color-filter-outline service material left"></i>
+                        <div class="service-content">
+                            <h6 class="heading grey margin-bottom-extrasmall">Mission</h6>
+                            <p class="margin-bottom-null">Our mission is always to bring the products with latest
+                                advanced technology meets the market. As well as providing fast service, high quality,
+                                good price for customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 padding-leftright-null">
+                    <div class="text">
+                        <i class="icon ion-ios-lightbulb-outline service material left"></i>
+                        <div class="service-content">
+                            <h6 class="heading  margin-bottom-extrasmall">Vision</h6>
+                            <p class="margin-bottom-null">By work effort and creative and the application of science in
+                                manage, we wants to become a first commodity company in the field of providing printing
+                                services in Vietnam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Services -->
+        <!-- Section Image Background -->
+        <div class="row margin-leftright-null grey-background">
+            <div class="bg-img overlay transparent responsive"
+                style="background-image:url({% static 'nnsgapp/img/creative2.jpg' %})">
+                <div class="col-md-12 padding-leftright-null">
+                    <div class="text">
+                        <h2 class="margin-bottom-null title left grey">About Us</h2>
+                        <div class="padding-onlytop-md">
+                            <h3 class="grey big margin-bottom-small">Passionate about perfection</h3>
+                            <p class="heading left margin-bottom grey">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatem dolorem voluptas quo ipsum obcaecati placeat, architecto,
+                                amet voluptatum esse officia, distinctio dignissimos minima dicta. Veniam debitis eum
+                                illum asperiores animi!</p>
+                            <a href="{% url 'about' %}" class="btn-alt active shadow small margin-null">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Section Image Background -->
+        <!-- Concept -->
+        <div class="row no-margin">
+            <div class="col-md-12 padding-leftright-null">
+                <div class="col-md-4 padding-leftright-null">
+                    <div class="text padding-md-bottom-null">
+                        <em class="number">01.</em>
+                        <div class="service-content medium">
+                            <h6 class="heading uppercase color padding-onlytop-sm">Our Mission</h6>
+                            <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit.
+                                Qui!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 padding-leftright-null">
+                    <div class="text padding-md-bottom-null">
+                        <em class="number">02.</em>
+                        <div class="service-content medium">
+                            <h6 class="heading uppercase color padding-onlytop-sm">Our Vision</h6>
+                            <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit.
+                                Qui!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 padding-leftright-null">
+                    <div class="text">
+                        <em class="number">03.</em>
+                        <div class="service-content medium">
+                            <h6 class="heading uppercase color padding-onlytop-sm">Our Values</h6>
+                            <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit.
+                                Qui!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Concept -->
+        <!-- Skills -->
+        <!-- <div class="row no-margin color-background text">
+            <section id="skills" class="white">
+                <div class="col-md-6 padding-leftright-null">
+                    <ul class="skill-list padding-sm-bottom">
+                        <em class="white">Development</em>
+                        <li>
+                            <span class="border-color" data-percent="25%"></span>
+                            <span class="label"><span class="count" data-to="25"></span>%</span>
+                        </li>
+                        <em class="white">Branding</em>
+                        <li class="margin-null">
+                            <span class="border-color" data-percent="75%"></span>
+                            <span class="label"><span class="count" data-to="75"></span>%</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 padding-leftright-null">
+                    <ul class="skill-list">
+                        <em class="white">User interface</em>
+                        <li>
+                            <span class="border-color" data-percent="45%"></span>
+                            <span class="label"><span class="count" data-to="45"></span>%</span>
+                        </li>
+                        <em class="white">Marketing</em>
+                        <li class="margin-null">
+                            <span class="border-color" data-percent="85%"></span>
+                            <span class="label"><span class="count" data-to="85"></span>%</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div> -->
+        <!-- END Skills -->
+        <!--  Projects Showcase  -->
+        <div id="showcase-projects" class="text grey-background">
+            <div class="row">
+                <div class="col-md-12 padding-leftright-null text-center">
+                    <h2 class="margin-bottom-null title grey">Creative Agency</h2>
+                    <div class="padding-md">
+                        <h3 class="grey big margin-bottom-small center">Latest Works</h3>
+                        <p class="heading center margin-bottom grey">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Placeat, sed amet recusandae natus quo labore asperiores accusamus est cum
+                            reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <section class="showcase-carousel">
+                        <!--  Single Projects  -->
+                        <div class="item">
+                            <div class="showcase-project">
+                                <img src="{% static 'nnsgapp/img/item1.jpg' %}" alt="">
+                                <div class="content">
+                                    <span class="read">
+                                        <i class="material-icons">add</i>
+                                    </span>
+                                    <h6 class="heading black">Greenline</h6>
+                                    <p class="heading margin-null">Branding / Identity</p>
+                                </div>
+                                <a href="standard-project.html" class="link"></a>
+                            </div>
+                        </div>
+                        <!--  END Single Projects  -->
+                        <div class="item">
+                            <div class="showcase-project">
+                                <img src="{% static 'nnsgapp/img/item2.jpg' %}" alt="">
+                                <div class="content">
+                                    <span class="read">
+                                        <i class="material-icons">add</i>
+                                    </span>
+                                    <h6 class="heading black">Housery</h6>
+                                    <p class="heading margin-null">Visual / Concept</p>
+                                </div>
+                                <a href="gallery-project.html" class="link"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="showcase-project">
+                                <img src="{% static 'nnsgapp/img/item3.jpg' %}" alt="">
+                                <div class="content">
+                                    <span class="read">
+                                        <i class="material-icons">add</i>
+                                    </span>
+                                    <h6 class="heading black">iPackage</h6>
+                                    <p class="heading margin-null">Marketing / Social</p>
+                                </div>
+                                <a href="standard-project.html" class="link"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="showcase-project">
+                                <img src="{% static 'nnsgapp/img/item4.jpg' %}" alt="">
+                                <div class="content">
+                                    <span class="read">
+                                        <i class="material-icons">add</i>
+                                    </span>
+                                    <h6 class="heading black">Pulse</h6>
+                                    <p class="heading margin-null">Design / Branding</p>
+                                </div>
+                                <a href="gallery-project.html" class="link"></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--  END Projects Showcase  -->
+        <!--  Section Image Background with overlay  -->
+        <div class="row margin-leftright-null grey-background">
+            <div class="bg-img overlay responsive"
+                style="background-image:url({% static 'nnsgapp/img/service4.jpg' %})">
+                <!-- Testimonials -->
+                <section class="testimonials-carousel-simple col-md-12 text padding-bottom-null">
+                    <div class="item padding-leftright-null">
+                        <div class="text padding-top-null padding-bottom-null">
+                            <blockquote class="margin-bottom-small white">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipisicing elit. Consequuntur voluptatum fugiat molestias, veritatis perspiciatis
+                                laborum modi beatae placeat explicabo at laudantium aliquam, nam vero ut!</blockquote>
+                            <em class="small grey-light">AC Company</em><span class="margin-null white"> John Doe</span>
+                        </div>
+                    </div>
+                    <div class="item padding-leftright-null">
+                        <div class="text padding-top-null padding-bottom-null">
+                            <blockquote class="margin-bottom-small white">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Consequuntur voluptatum fugiat molestias, veritatis perspiciatis
+                                laborum modi beatae placeat explicabo at laudantium aliquam, nam vero ut!</blockquote>
+                            <em class="small grey-light">AC Company</em><span class="margin-null white"> John Doe</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- END Testimonials -->
+            </div>
+        </div>
+        <!--  END Section Image Background with overlay  -->
+        <!-- Section News -->
+        <div class="row margin-leftright-null grey-background">
+            <div class="col-md-4 padding-leftright-null">
+                <div class="text">
+                    <h2 class="margin-bottom-null title left grey">News</h2>
+                    <div class="padding-onlytop-md">
+                        <h3 class="grey big margin-bottom-small">Latest Posts. Stay tuned!</h3>
+                        <p class="heading left margin-bottom grey">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Voluptatem dolorem voluptas quo ipsum obcaecati placeat, architecto, amet voluptatum
+                            esse officia, distinctio dignissimos minima dicta. Veniam debitis eum illum asperiores
+                            animi!</p>
+                        <a href="{% url 'blog' %}" class="btn-alt active shadow small margin-null">Read all news</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 text" id="news">
+                {% for latest_post in lastest_posts %}
+                <!-- Single News -->
+                <div class="col-sm-6 single-news">
+                    <article>
+                        <img src="{% static 'nnsgapp/img/'|add:latest_post.image_name %}" alt="">
+                        <div class="content">
+                            <span class="read">
+                                <i class="material-icons">subject</i>
+                            </span>
+                            <h3>{{latest_post.title}}</h3>
+                            <span class="category">Tech</span>
+                            <span class="category">Social</span>
+                            <span class="date">{{latest_post.date|date:"d, M, y"}}</span>
+                            <p>{{latest_post.excerpt}}</p>
+                        </div>
+                        <a href="standard-post.html" class="link"></a>
+                    </article>
+                </div>
+                <!-- END Single News -->
+                {% endfor %}
+            </div>
+        </div>
+        <!-- END Section News -->
+
+    </div>
+    <!--  END Home Wrap -->
+</div>
+<!--  END Page Content, class footer-fixed if footer is fixed  -->
+{% endblock content %}
