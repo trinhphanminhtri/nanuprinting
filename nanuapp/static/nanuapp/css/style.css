@@ -2545,6 +2545,7 @@ header nav.navbar #logo a.navbar-brand {
   height: 80px;
   line-height: 80px;
   /* padding: 25px 0; */
+  padding: 15px 0;
 }
 
 @media screen and (max-width: 480px) {
