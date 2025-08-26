@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="{% static 'nanuapp/img/favicon.ico' %}" type="image/x-icon">
     <title>Page Not Found | Na Nu Printing Company</title>
 
     <!-- Bootstrap -->
@@ -48,7 +49,7 @@
     <div id="myloader">
         <span class="loader">
             <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="normal" alt="logo">
-            <!-- <img src="{% static 'nanuapp/img/logo@2x.png' %}" class="retina" alt="logo">  -->
+            <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="retina" alt="logo">
         </span>
     </div>
     <!--  Main Wrap  -->
@@ -62,8 +63,7 @@
                         <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="normal" alt="logo">
                         <!-- <img src="{% static 'nanuapp/img/logo@2x.png' %}" class="retina" alt="logo"> -->
                         <!-- <img src="{% static 'nanuapp/img/logo_white.png' %}" class="normal white-logo" alt="logo">-->
-                        <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="normal white-logo"
-                            alt="logo">
+                        <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="retina" alt="logo">
                         <!-- <img src="{% static 'nanuapp/img/logo_white@2x.png' %}" class="retina white-logo" alt="logo"> -->
                     </a>
                 </div>
@@ -123,11 +123,12 @@
             <!--  Slider  -->
             <div id="flexslider" class="fullpage-wrap small">
                 <ul class="slides">
-                    <li style="background-image:url({% static 'nanuapp/img/404.jpg' %})">
+                    <li style="background-image:url({% static 'nanuapp/img/notfoundbg.jpg' %})">
                         <div class="text text-center">
-                         <h1></h1>
+                            <h1></h1>
                             <h1 class="white margin-bottom-small">🚧 Coming Soon 🚧</h1>
-                            <p class="heading white margin-bottom">This site is under construction. Stay tuned for something amazing!</p>
+                            <p class="heading white margin-bottom">This site is under construction. Stay tuned for
+                                something amazing!</p>
                             <a href="{% url 'home' %}" class="btn-alt small active margin-null shadow">Return Home</a>
                         </div>
                         <div class="gradient dark"></div>
@@ -144,8 +145,8 @@
                     <div class="logo">
                         <a href="{% url 'home' %}">
                             <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="normal" alt="logo">
+                            <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="retina" alt="logo">
                         </a>
-                        <!-- <img src="{% static 'nanuapp/img/logo_white@2x.png' %}" class="retina" alt="logo"> -->
                     </div>
                     <p class="grey-light">Your Best Choice for Quality, <br />High Technology, and Smart Printing
                         Solutions
@@ -179,7 +180,7 @@
                     <h6 class="heading white margin-bottom-extrasmall">Contact Us</h6>
                     <ul class="info">
                         <li>Phone: <a href="">(84 - 8)36200318</a></li>
-                        <li>Mail: <a href="">info@nanuprintinggroup.com</a></li>
+                        <li>Mail: <a href="">info@nanugroups.com</a></li>
                         <li>Monday to Saturday <span class="white">7:30 am to 4:30 pm</span></li>
                         <li><a href="">Lot C6-4, N8 Street, Tan Phu Trung Industrial Zone<br>Cu Chi Commune, Ho Chi Minh
                                 City, VietNam</a></li>
