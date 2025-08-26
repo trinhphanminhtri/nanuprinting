@@ -2545,6 +2545,7 @@ header nav.navbar #logo a.navbar-brand {
   height: 80px;
   line-height: 80px;
   /* padding: 25px 0; */
+  padding: 15px 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -3646,7 +3647,7 @@ header nav.navbar #menu-classic {
 
 @media screen and (max-width: 991px) and (max-width: 480px) {
   header nav.navbar #menu-classic.open {
-    top: 60px;
+    top: 100px;
   }
 }
 
