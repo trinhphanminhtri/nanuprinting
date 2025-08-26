@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="{% static 'nanuapp/img/favicon.ico' %}" type="image/x-icon">
+
     <title>Page Not Found | Na Nu Printing Company</title>
 
     <!-- Bootstrap -->
@@ -60,11 +61,8 @@
                 <!--  Header Logo  -->
                 <div id="logo">
                     <a class="navbar-brand" href="{% url 'home' %}">
-                        <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="normal" alt="logo">
-                        <!-- <img src="{% static 'nanuapp/img/logo@2x.png' %}" class="retina" alt="logo"> -->
-                        <!-- <img src="{% static 'nanuapp/img/logo_white.png' %}" class="normal white-logo" alt="logo">-->
+                       <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="normal" alt="logo">
                         <img src="{% static 'nanuapp/img/logo_nanu_512x512.png' %}" class="retina" alt="logo">
-                        <!-- <img src="{% static 'nanuapp/img/logo_white@2x.png' %}" class="retina white-logo" alt="logo"> -->
                     </a>
                 </div>
                 <!--  END Header Logo  -->
@@ -126,7 +124,7 @@
                     <li style="background-image:url({% static 'nanuapp/img/notfoundbg.jpg' %})">
                         <div class="text text-center">
                             <h1></h1>
-                            <h1 class="white margin-bottom-small">🚧 Coming Soon 🚧</h1>
+                            <h1 class="white margin-bottom-small">Coming Soon</h1>
                             <p class="heading white margin-bottom">This site is under construction. Stay tuned for
                                 something amazing!</p>
                             <a href="{% url 'home' %}" class="btn-alt small active margin-null shadow">Return Home</a>
@@ -196,6 +194,7 @@
     </div>
     <!--  Main Wrap  -->
 
+    {% block scripts %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{% static 'nanuapp/js/jquery.min.js' %}"></script>
     <!-- All js library -->
@@ -215,6 +214,7 @@
     <script src="{% static 'nanuapp/js/pace.min.js' %}"></script>
     <script src="{% static 'nanuapp/js/typed.js' %}"></script>
     <script src="{% static 'nanuapp/js/main.js' %}"></script>
+    {% endblock scripts %}
 </body>
 
 </html>
