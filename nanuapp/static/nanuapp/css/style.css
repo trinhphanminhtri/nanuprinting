@@ -4357,7 +4357,8 @@ header nav.navbar.white #search-box .form-input :-ms-input-placeholder {
 
   #page-content #flexslider ul li .text h1,
   #page-content #flexslider-nav ul li .text h1 {
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 30px;
     line-height: 45px;
   }
 }
