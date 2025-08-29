@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import Http404
+from django.core.mail import send_mail
+from django.conf import settings
+from .forms import ContactForm
 
 # Create your views here.
 def index(request):
@@ -28,7 +31,27 @@ def blog(request):
 
 def contact(request):
     try:
-            return render(request, 'nanuapp/contact.html')
+        if request.method == 'POST':
+                form = ContactForm(request.POST)
+                if form.is_valid():
+                        name = form.cleaned_data['name']
+                        email = form.cleaned_data['email']
+                        subject = form.cleaned_data['subject']
+                        message = form.cleaned_data['message']
+                                
+                        # Send email
+                        send_mail(
+                                f'{subject} {name}',
+                                message,
+                                email,
+                                [settings.EMAIL_HOST_USER],
+                                fail_silently=False,
+                        )
+                return redirect('contact')  # Redirect to a new URL after POST
+        else:
+                form = ContactForm()
+        return render(request, 'nanuapp/contact.html', {'form': form})
+
     except:
-            raise Http404()
+        raise Http404()
 

@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,10 +23,11 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY=os.getenv('SECRET_KEY')
+# SECRET_KEY=os.getenv('SECRET_KEY')
+SECRET_KEY=config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = config('DEBUG', 'False') == 'True'
 
 if DEBUG:
     ALLOWED_HOSTS = []
@@ -80,14 +82,21 @@ WSGI_APPLICATION = 'nanuprinting.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE'),
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT'),
+        'ENGINE': config('DB_ENGINE'),
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT'),
     }
 }
+
+# Email Configuration
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', 'True') == 'True'
 
 
 # Password validation

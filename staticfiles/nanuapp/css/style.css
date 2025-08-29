@@ -7940,7 +7940,7 @@ aside.left form .form-input span.form-button {
   font-weight: 400;
 }
 
-#contact-form .form-field:focus,
+.form-field:focus,
 #search-form .form-field:focus {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -7997,8 +7997,8 @@ aside.left form .form-input span.form-button {
   font-size: 14px;
 }
 
-#contact-form #submit-contact,
-#search-form #submit-contact {
+#contact-form #submit,
+#search-form #submit {
   padding: 0;
   text-align: left;
   font-size: 12px;
@@ -8021,16 +8021,16 @@ aside.left form .form-input span.form-button {
   transition: all .4s ease;
 }
 
-#contact-form #submit-contact:hover,
-#search-form #submit-contact:hover {
+#contact-form #submit :hover,
+#search-form #submit :hover {
   color: #4e495c;
   -webkit-transition: all .4s ease;
   -o-transition: all .4s ease;
   transition: all .4s ease;
 }
 
-#contact-form #submit-contact.btn-alt,
-#search-form #submit-contact.btn-alt {
+#contact-form #submit .btn-alt,
+#search-form #submit .btn-alt {
   height: 40px;
   line-height: 40px;
   text-transform: none;
@@ -8054,8 +8054,8 @@ aside.left form .form-input span.form-button {
   outline: none;
 }
 
-#contact-form #submit-contact.btn-alt:hover,
-#search-form #submit-contact.btn-alt:hover {
+#contact-form #submit .btn-alt:hover,
+#search-form #submit .btn-alt:hover {
   background-color: #2979FF;
   color: white;
   -webkit-transition: all .4s ease;
@@ -8063,19 +8063,19 @@ aside.left form .form-input span.form-button {
   transition: all .4s ease;
 }
 
-#contact-form #submit-contact.btn-alt.shadow,
-#search-form #submit-contact.btn-alt.shadow {
+#contact-form #submit .btn-alt.shadow,
+#search-form #submit .btn-alt.shadow {
   -webkit-box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
-#contact-form #submit-contact.btn-alt.white,
-#search-form #submit-contact.btn-alt.white {
+#contact-form #submit .btn-alt.white,
+#search-form #submit .btn-alt.white {
   border: 1px solid white;
 }
 
-#contact-form #submit-contact.btn-alt.white:hover,
-#search-form #submit-contact.btn-alt.white:hover {
+#contact-form #submit .btn-alt.white:hover,
+#search-form #submit .btn-alt.white:hover {
   background-color: white;
   color: #2979FF !important;
   -webkit-transition: all .4s ease;
@@ -8083,8 +8083,8 @@ aside.left form .form-input span.form-button {
   transition: all .4s ease;
 }
 
-#contact-form #submit-contact.btn-alt.active,
-#search-form #submit-contact.btn-alt.active {
+#contact-form #submit .btn-alt.active,
+#search-form #submit .btn-alt.active {
   background-color: #2979FF;
   color: white;
   -webkit-transition: all .4s ease;
@@ -8092,8 +8092,8 @@ aside.left form .form-input span.form-button {
   transition: all .4s ease;
 }
 
-#contact-form #submit-contact.btn-alt.active:hover,
-#search-form #submit-contact.btn-alt.active:hover {
+#contact-form #submit .btn-alt.active:hover,
+#search-form #submit .btn-alt.active:hover {
   background-color: transparent;
   color: #2979FF !important;
   -webkit-transition: all .4s ease;

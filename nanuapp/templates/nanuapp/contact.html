@@ -71,6 +71,8 @@
 
         <!-- Contact Form NNSG -->
         <div class="row margin-leftright-null">
+
+            <!-- Contact -->
             <div class="col-md-6 padding-leftright-null">
                 <div class="text">
                     <h2 class="margin-bottom-null title left">Your trusted printing partner</h2>
@@ -88,35 +90,49 @@
                     </div>
                 </div>
             </div>
+            <!-- END Contact -->
+
+            <!-- Form -->
             <div class="col-md-6 padding-leftright-null">
                 <div class="text padding-md-top-null">
-                    <form id="contact-form" class="padding-md padding-md-topbottom-null">
+                    <form method="POST" id="contact-form" class="padding-md padding-md-topbottom-null">
+                        {% csrf_token %}
+                        {% comment %} {{form.as_p}} {% endcomment %}
+
+                        <!-- your name, email, subject, message -->
                         <div class="row">
                             <div class="col-md-4">
-                                <input class="form-field" name="name" id="name" type="text" placeholder="Name">
+                            {{form.name}}
                             </div>
                             <div class="col-md-4">
-                                <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
+                            {{form.email}}                               
                             </div>
                             <div class="col-md-4">
-                                <input class="form-field" name="subjectForm" id="subjectForm" type="text"
-                                    placeholder="Subject">
+                            {{form.subject}}
                             </div>
                         </div>
+                        <!-- END your name, email, subject, message -->
+
+                          <!-- your message -->
                         <div class="row">
                             <div class="col-md-12">
-                                <textarea class="form-field" name="messageForm" id="messageForm" rows="6"
-                                    placeholder="Your Message"></textarea>
+                            {{form.message}}
+                               
                                 <div class="submit-area padding-onlytop-sm">
-                                    <input type="submit" id="submit-contact" class="btn-alt active shadow"
+                                   
+                                   <input type="submit" id="submit" class="btn-alt active shadow" 
                                         value="Send Message">
                                     <div id="msg" class="message"></div>
                                 </div>
                             </div>
                         </div>
+                        <!-- END your message -->
+
                     </form>
                 </div>
             </div>
+            <!-- END Form -->
+
         </div>
         <!-- END Contact Form -->
 
@@ -173,6 +189,8 @@
 
         <!-- Contact Form NNBD -->
         <div class="row margin-leftright-null">
+
+            <!-- Contact -->
             <div class="col-md-6 padding-leftright-null">
                 <div class="text">
                     <h2 class="margin-bottom-null title left">Your trusted printing partner</h2>
@@ -189,35 +207,50 @@
                     </div>
                 </div>
             </div>
+            <!-- END Contact -->
+
+            <!-- Form -->
             <div class="col-md-6 padding-leftright-null">
                 <div class="text padding-md-top-null">
-                    <form id="contact-form" class="padding-md padding-md-topbottom-null">
+                    <form method="POST" id="contact-form" class="padding-md padding-md-topbottom-null">
+                    {% csrf_token %}
+                        <!-- your name, email, subject, message -->
                         <div class="row">
                             <div class="col-md-4">
-                                <input class="form-field" name="name" id="name" type="text" placeholder="Name">
+                            {{form.name}}
+                                {% comment %} <input class="form-field" name="name" id="name" type="text" placeholder="Your name"> {% endcomment %}
                             </div>
                             <div class="col-md-4">
-                                <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
+                            {{form.email}}
+                                {% comment %} <input class="form-field" name="mail" id="mail" type="text" placeholder="Your email"> {% endcomment %}
                             </div>
                             <div class="col-md-4">
-                                <input class="form-field" name="subjectForm" id="subjectForm" type="text"
-                                    placeholder="Subject">
+                            {{form.subject}}
+                                {% comment %} <input class="form-field" name="subjectForm" id="subjectForm" type="text"
+                                    placeholder="Subject"> {% endcomment %}
                             </div>
                         </div>
+                        <!-- END your name, email, subject, message -->
+
+                        <!-- your message -->
                         <div class="row">
                             <div class="col-md-12">
-                                <textarea class="form-field" name="messageForm" id="messageForm" rows="6"
-                                    placeholder="Your Message"></textarea>
+                            {{form.message}}
+                                {% comment %} <textarea class="form-field" name="messageForm" id="messageForm" rows="6"
+                                    placeholder="Your Message"></textarea> {% endcomment %}
                                 <div class="submit-area padding-onlytop-sm">
-                                    <input type="submit" id="submit-contact" class="btn-alt active shadow"
+                                    <input type="submit" id="submit" class="btn-alt active shadow"
                                         value="Send Message">
                                     <div id="msg" class="message"></div>
                                 </div>
                             </div>
                         </div>
+                        <!-- END your message -->
                     </form>
                 </div>
             </div>
+            <!-- END Form -->
+
         </div>
         <!-- END Contact Form -->
 
