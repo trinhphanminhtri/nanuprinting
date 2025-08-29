@@ -1,0 +1,42 @@
+# Python bytecode
+**/__pycache__/
+*.pyc
+*.so
+
+# Migrations (if using Django)
+**/migrations/
+!**/migrations/__init__.py
+
+# SQLite database
+*.sqlite3
+
+# Environment variables
+.env
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Static & media files
+
+
+
+# Logs & test output
+*.log
+*.pot
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# Node.js (frontend)
+node_modules/
+
+# OS-specific
+.DS_Store
+Thumbs.db
