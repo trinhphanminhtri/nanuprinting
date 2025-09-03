@@ -7,9 +7,10 @@ from .forms import ContactForm
 # Create your views here.
 def index(request):
     try:
-            return render(request, 'nanuapp/index.html')
+        video_url = '/media/videos/about_office_staff.mp4'
+        return render(request, 'nanuapp/index.html',{'video_url': video_url})
     except:
-            raise Http404()
+          raise Http404()
 
 def about(request):
     try:
@@ -54,4 +55,3 @@ def contact(request):
 
     except:
         raise Http404()
-

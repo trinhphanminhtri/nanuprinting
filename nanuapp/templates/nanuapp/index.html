@@ -35,8 +35,8 @@
                     <div class="text padding-md-bottom-null">
                         <i class="icon ion-ios-analytics-outline service material left"></i>
                         <div class="service-content">
-                            <h6 class="heading grey margin-bottom-small">Business Goals</h6>
-                            <p class="heading margin-bottom-null">Our goal is to print products that will always made
+                            <h4 class="heading grey margin-bottom-small">Business Goals</h4>
+                            <p class="heading grey margin-bottom-null">Our goal is to print products that will always made
                                 our
                                 customers satisfy on term good quality and fastest delivery.</p>
                         </div>
@@ -46,8 +46,8 @@
                     <div class="text padding-md-bottom-null">
                         <i class="icon ion-ios-color-filter-outline service material left"></i>
                         <div class="service-content">
-                            <h6 class="heading grey margin-bottom-small">Mission</h6>
-                            <p class="heading margin-bottom-null">Our mission is always to bring the products with
+                            <h4 class="heading grey margin-bottom-small">Mission</h4>
+                            <p class="heading grey margin-bottom-null">Our mission is always to bring the products with
                                 latest
                                 advanced technology meets the market. As well as providing fast service, high quality,
                                 good price for customers.</p>
@@ -58,8 +58,8 @@
                     <div class="text">
                         <i class="icon ion-ios-lightbulb-outline service material left"></i>
                         <div class="service-content">
-                            <h6 class="heading grey  margin-bottom-small">Vision</h6>
-                            <p class="heading margin-bottom-null">By work effort and creative and the application of
+                            <h4 class="heading grey  margin-bottom-small">Vision</h4>
+                            <p class="heading grey margin-bottom-null">By work effort and creative and the application of
                                 science in
                                 manage, we wants to become a first commodity company in the field of providing printing
                                 services in Vietnam.</p>
@@ -120,10 +120,14 @@
         <div class="row margin-leftright-null">
             <!-- Video -->
             <div class="col-md-6 padding-leftright-null">
-                <a class="popup-youtube" href="https://www.youtube.com/watch?v=4PFBxfITU_Q">
+                <a class="popup-youtube">
                     <div data-responsive="child-height" data-responsive-id="story" class="bg-img"
-                        style="height: 511px; background-image: url(&quot;{% static 'nanuapp/img/service1.jpg' %}&quot;);">
+                        style="height: 511px; display:block; background-image: url(&quot;{% static 'nanuapp/img/home/office_team.jpg' %}&quot;);">
                     </div>
+                    <video id="videoPlayer" width="100%" height="100%" controls style="position: absolute; top: 0; left: 0; object-fit: cover; display: none;">
+                        <source src="{{video_url}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </a>
             </div>
             <!-- END Video -->

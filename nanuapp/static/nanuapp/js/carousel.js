@@ -4,10 +4,10 @@ $(document).ready(function () {
         margin: 10,
         responsiveClass: true,
         autoplay: true,
-        autoplayTimeout: 500,
+        autoplayTimeout: 800,
         dots: false,
         responsive: {
-            0: { items: 4 },
+            0: { items: 3 },
             600: { items: 6 },
             1000: { items: 8 }
         }
