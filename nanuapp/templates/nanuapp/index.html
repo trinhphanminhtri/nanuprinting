@@ -115,6 +115,7 @@
         </div>
         <!-- END Counters -->
 
+        <!-- Section Video -->
         <!-- Section same Height. Child get the parent Height. Set the same id -->
         <div class="row margin-leftright-null">
             <!-- Video -->
@@ -142,7 +143,7 @@
             </div>
         </div>
         <!-- END Section same Height. Child get the parent Height. Set the same id -->
-
+        <!-- END Section Video -->
 
 
         <!-- Concept -->
@@ -223,16 +224,14 @@
         </div> -->
         <!-- END Skills -->
 
-        <!--  Projects Showcase  -->
+        <!--  Projects Showcase Latest Works -->
         <div id="showcase-projects" class="text grey-background">
             <div class="row">
                 <div class="col-md-12 padding-leftright-null text-center">
                     <h2 class="margin-bottom-null title grey">Creative Agency</h2>
                     <div class="padding-md">
                         <h3 class="grey big margin-bottom-small center">Latest Works</h3>
-                        <p class="heading center margin-bottom grey">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Placeat, sed amet recusandae natus quo labore asperiores accusamus est cum
-                            reprehenderit.</p>
+                        <p class="heading center margin-bottom grey">Recent Projects & Collaborations</p>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -305,7 +304,7 @@
                 </div>
             </div>
         </div>
-        <!--  END Projects Showcase  -->
+        <!--  END Projects Showcase Latest Works -->
 
         <!--  Section Image Background with overlay  -->
         <div class="row margin-leftright-null grey-background">
@@ -379,6 +378,26 @@
                 <!-- Single News -->
                 <div class="col-sm-6 single-news">
                     <article>
+                        <img src="{% static 'nanuapp/img/news3.jpg' %}" alt="">
+                        <div class="content">
+                            <span class="read">
+                                <i class="material-icons">subject</i>
+                            </span>
+                            <h3>The company's 17th anniversary</h3>
+                            <span class="category">People</span>
+                            <span class="category">Topic</span>
+                            <span class="date">28.08.2025</span>
+                            <p>We're proud to celebrate 17 years of innovation, growth, and shared success.
+                                Thank you for being part of our journey—here's to the future!</p>
+                        </div>
+                        <a href="gallery-post.html" class="link"></a>
+                    </article>
+                </div>
+                <!-- END Single News -->
+
+                <!-- Single News -->
+                <div class="col-sm-6 single-news">
+                    <article>
                         <img src="{% static 'nanuapp/img/news1.jpg' %}" alt="">
                         <div class="content">
                             <span class="read">
@@ -387,32 +406,16 @@
                             <h3>Meetup Nha Trang</h3>
                             <span class="category">Team Building</span>
                             <span class="date">20.05.2025</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas corporis.
-                                Maxime
-                                sapiente, adipisci laborum.</p>
+                            <p>Join us in beautiful Nha Trang as we come together to celebrate connection,
+                                collaboration, where ideas flow, memories are made, and the future begins..
+                            </p>
                         </div>
                         <a href="standard-post.html" class="link"></a>
                     </article>
                 </div>
                 <!-- END Single News -->
-                <div class="col-sm-6 single-news">
-                    <article>
-                        <img src="{% static 'nanuapp/img/news3.jpg' %}" alt="">
-                        <div class="content">
-                            <span class="read">
-                                <i class="material-icons">subject</i>
-                            </span>
-                            <h3>Brand Power</h3>
-                            <span class="category">People</span>
-                            <span class="category">Topic</span>
-                            <span class="date">12.05.2016</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas corporis.
-                                Maxime
-                                sapiente, adipisci laborum.</p>
-                        </div>
-                        <a href="gallery-post.html" class="link"></a>
-                    </article>
-                </div>
+
+
             </div>
         </div>
         <!-- END Section News -->
