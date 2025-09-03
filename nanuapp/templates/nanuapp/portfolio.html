@@ -1,0 +1,373 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Portfolio | Na Nu Printing Company{% endblock page_title %}
+
+{% block content %}
+<!--  Page Content, class footer-fixed if footer is fixed  -->
+<div id="page-content" class="header-static footer-fixed">
+  <!--  Slider  -->
+  <div id="flexslider" class="fullpage-wrap small">
+    <ul class="slides">
+      <li style="background-image:url({% static 'nanuapp/img/portfolio/slide.jpg' %})">
+        <div class="text text-center">
+          <h1 class="white margin-bottom-small">All our products</h1>
+          <p class="heading white">Trusted Cooperative & Long-term substainability</p>
+        </div>
+        <div class="gradient dark"></div>
+      </li>
+    </ul>
+  </div>
+  <!--  END Slider  -->
+
+  <div id="home-wrap" class="content-section fullpage-wrap">
+
+    <!-- Product catalogue title -->
+    <div class="row margin-leftright-null text-center">
+      <div class="col-md-12 padding-leftright-null">
+        <div class="text">
+          <h2 class="margin-bottom-null title center grey">Our printing technology</h2>
+          <div class="padding-onlytop-md">
+            <h3 class="grey big margin-bottom-small">MAIN TECHNOLOGY OF PRINTING</h3>
+            <p class="heading center margin-bottom-null grey">Our products meet the strict testing standards required by
+              our customers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Product catalogue title -->
+
+    <!--  Content Section Full Page  -->
+    <section id="projects-filters" class="wrap-filters-minimal text-center">
+      <!--  Filters  -->
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="col-md-12 filters padding-leftright-null">
+            <li data-filter="*" class="is-checked">All</li>
+            <li data-filter=".water-print">Water print</li>
+            <li data-filter=".cracking-print">Cracking print</li>
+            <li data-filter=".plastisol-print">Plastisol print</li>
+            <li data-filter=".high-density-print">High density print</li>
+            <li data-filter=".PU-print">PU print</li>
+            <li data-filter=".silicone-print">Silicone print</li>
+            <li data-filter=".puff-print">Puff print</li>
+            <li data-filter=".foil-print">Foil print</li>
+            <li data-filter=".flocking-print">Flocking print</li>
+            <li data-filter=".heat-transfer-print">Heat transfer print</li>
+            <li data-filter=".solvent-print">Solvent print</li>
+            <li data-filter=".glitter-print">Glitter print</li>
+            <li data-filter=".discharge-print">Discharge print</li>
+            <li data-filter=".glow-dark-print">Glow and dark print</li>
+            <li data-filter=".reflective-print">Reflective print</li>
+            <li data-filter=".metallic-silver-print">Metallic silver print</li>
+            <li data-filter=".sublimation-digital-print">Sublimation/ Digital print</li>
+            <li data-filter=".embossing-debossing-print">Embossing & Debossing print</li>
+            <li data-filter=".metallic-gold-print">Metallic gold print</li>
+            <li data-filter=".rubber-print">Rubber print</li>
+            <li data-filter=".pearl-print">Pearl print</li>
+            <li data-filter=".digital-hydrid-printing-system">Digital Hybrid printing system</li>
+          </ul>
+        </div>
+      </div>
+      <!--  END Filters  -->
+    </section>
+
+    <!--  Projects Section  -->
+    <section id="projects" data-isotope="load-simple">
+      <div class="projects-items equal four-columns">
+        <div class="one-item water-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Social / Digital strategy</h4>
+              <h3 class="big">Housery</h3>
+            </div>
+            <a href="standard-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item cracking-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Identity</h4>
+              <h3 class="big">Greenline</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item plastisol-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>App / Design</h4>
+              <h3 class="big">Enfasi</h3>
+            </div>
+            <a href="standard-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item high-density-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Design / Branding</h4>
+              <h3 class="big">Pulse</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item PU-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Development / UI-UX</h4>
+              <h3 class="big">Archotale</h3>
+            </div>
+            <a href="standard-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item silicone-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Social / Digital strategy</h4>
+              <h3 class="big">iPackage</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item puff-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Social / Web Development</h4>
+              <h3 class="big">Nil Digital</h3>
+            </div>
+            <a href="standard-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item foil-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item flocking-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item heat-transfer-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item solvent-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item glitter-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item discharge-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item glow-dark-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item reflective-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item metallic-silver-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item sublimation-digital-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item embossing-debossing-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item metallic-gold-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item rubber-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item pearl-print">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+        <div class="one-item digital-hydrid-printing-system">
+          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
+          <div class="content">
+            <span class="icon">
+              <i class="material-icons">add</i>
+            </span>
+            <div class="text">
+              <h4>Branding / Digital strategy</h4>
+              <h3 class="big">Cuptale</h3>
+            </div>
+            <a href="gallery-project.html" class="link"></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--  END Projects Section  -->
+
+  </div>
+
+</div>
+<!--  END Page Content -->
+{% endblock content %}

@@ -35,8 +35,9 @@
                     <div class="text padding-md-bottom-null">
                         <i class="icon ion-ios-analytics-outline service material left"></i>
                         <div class="service-content">
-                            <h6 class="heading  margin-bottom-extrasmall">Business Goals</h6>
-                            <p class="margin-bottom-null">Our goal is to print products that will always made our
+                            <h6 class="heading grey margin-bottom-small">Business Goals</h6>
+                            <p class="heading margin-bottom-null">Our goal is to print products that will always made
+                                our
                                 customers satisfy on term good quality and fastest delivery.</p>
                         </div>
                     </div>
@@ -45,8 +46,9 @@
                     <div class="text padding-md-bottom-null">
                         <i class="icon ion-ios-color-filter-outline service material left"></i>
                         <div class="service-content">
-                            <h6 class="heading grey margin-bottom-extrasmall">Mission</h6>
-                            <p class="margin-bottom-null">Our mission is always to bring the products with latest
+                            <h6 class="heading grey margin-bottom-small">Mission</h6>
+                            <p class="heading margin-bottom-null">Our mission is always to bring the products with
+                                latest
                                 advanced technology meets the market. As well as providing fast service, high quality,
                                 good price for customers.</p>
                         </div>
@@ -56,8 +58,9 @@
                     <div class="text">
                         <i class="icon ion-ios-lightbulb-outline service material left"></i>
                         <div class="service-content">
-                            <h6 class="heading  margin-bottom-extrasmall">Vision</h6>
-                            <p class="margin-bottom-null">By work effort and creative and the application of science in
+                            <h6 class="heading grey  margin-bottom-small">Vision</h6>
+                            <p class="heading margin-bottom-null">By work effort and creative and the application of
+                                science in
                                 manage, we wants to become a first commodity company in the field of providing printing
                                 services in Vietnam.</p>
                         </div>
@@ -66,26 +69,6 @@
             </div>
         </div>
         <!-- END Services -->
-
-        <!-- Section Image Background -->
-        <div class="row margin-leftright-null grey-background">
-            <div class="bg-img overlay transparent responsive"
-                style="background-image:url({% static 'nanuapp/img/creative2.jpg' %})">
-                <div class="col-md-12 padding-leftright-null">
-                    <div class="text">
-                        <h2 class="margin-bottom-null title left grey">About Us</h2>
-                        <div class="padding-onlytop-md">
-                            <h3 class="grey big margin-bottom-small">Passionate about perfection</h3>
-                            <p class="heading left margin-bottom grey">We are committed to print products with a wide
-                                variety of products at competitive prices, with the best quality compared to other
-                                competitors in the field.</p>
-                            <a href="{% url 'about' %}" class="btn-alt active shadow small margin-null">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END Section Image Background -->
 
         <!-- Counters -->
         <div class="row margin-leftright-null">
@@ -132,8 +115,37 @@
         </div>
         <!-- END Counters -->
 
+        <!-- Section same Height. Child get the parent Height. Set the same id -->
+        <div class="row margin-leftright-null">
+            <!-- Video -->
+            <div class="col-md-6 padding-leftright-null">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=4PFBxfITU_Q">
+                    <div data-responsive="child-height" data-responsive-id="story" class="bg-img"
+                        style="height: 511px; background-image: url(&quot;assets/img/service1.jpg&quot;);"></div>
+                </a>
+            </div>
+            <!-- END Video -->
+            <div class="col-md-6 padding-leftright-null">
+                <div data-responsive="parent-height" data-responsive-id="story" class="text ">
+                    <h2 class="margin-bottom-null title left grey">About Us</h2>
+                    <div class="padding-onlytop-md">
+                        <h3 class="grey big margin-bottom-small">Where Quality Meets Passion</h3>
+                        <p class="heading left margin-bottom grey">Na Nu Printing Group extends our warmest wishes for
+                            your continued health, success, and prosperity. We deeply appreciate the trust and
+                            long-standing cooperation from our valued customers over the years. Your support has been
+                            the cornerstone of our growth, and we look forward to many more years of fruitful
+                            partnership.</p>
+                        <a href="{% url 'about' %}" class="btn-alt active shadow small margin-null">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Section same Height. Child get the parent Height. Set the same id -->
+
+
+
         <!-- Concept -->
-        <div class="row no-margin">
+        <!-- <div class="row no-margin">
             <div class="col-md-12 padding-leftright-null">
                 <div class="col-md-4 padding-leftright-null">
                     <div class="text padding-md-bottom-null">
@@ -172,7 +184,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- END Concept -->
 
         <!-- Skills -->

@@ -102,26 +102,25 @@
                         <!-- your name, email, subject, message -->
                         <div class="row">
                             <div class="col-md-4">
-                            {{form.name}}
+                                {{form.name}}
                             </div>
                             <div class="col-md-4">
-                            {{form.email}}                               
+                                {{form.email}}
                             </div>
                             <div class="col-md-4">
-                            {{form.subject}}
+                                {{form.subject}}
                             </div>
                         </div>
                         <!-- END your name, email, subject, message -->
 
-                          <!-- your message -->
+                        <!-- your message -->
                         <div class="row">
                             <div class="col-md-12">
-                            {{form.message}}
-                               
+                                {{form.message}}
+
                                 <div class="submit-area padding-onlytop-sm">
-                                   
-                                   <input type="submit" id="submit" class="btn-alt active shadow" 
-                                        value="Send Message">
+
+                                    <input type="submit" id="submit" class="btn-alt active shadow" value="Send Message">
                                     <div id="msg" class="message"></div>
                                 </div>
                             </div>
@@ -213,19 +212,21 @@
             <div class="col-md-6 padding-leftright-null">
                 <div class="text padding-md-top-null">
                     <form method="POST" id="contact-form" class="padding-md padding-md-topbottom-null">
-                    {% csrf_token %}
+                        {% csrf_token %}
                         <!-- your name, email, subject, message -->
                         <div class="row">
                             <div class="col-md-4">
-                            {{form.name}}
-                                {% comment %} <input class="form-field" name="name" id="name" type="text" placeholder="Your name"> {% endcomment %}
+                                {{form.name}}
+                                {% comment %} <input class="form-field" name="name" id="name" type="text"
+                                    placeholder="Your name"> {% endcomment %}
                             </div>
                             <div class="col-md-4">
-                            {{form.email}}
-                                {% comment %} <input class="form-field" name="mail" id="mail" type="text" placeholder="Your email"> {% endcomment %}
+                                {{form.email}}
+                                {% comment %} <input class="form-field" name="mail" id="mail" type="text"
+                                    placeholder="Your email"> {% endcomment %}
                             </div>
                             <div class="col-md-4">
-                            {{form.subject}}
+                                {{form.subject}}
                                 {% comment %} <input class="form-field" name="subjectForm" id="subjectForm" type="text"
                                     placeholder="Subject"> {% endcomment %}
                             </div>
@@ -235,12 +236,11 @@
                         <!-- your message -->
                         <div class="row">
                             <div class="col-md-12">
-                            {{form.message}}
+                                {{form.message}}
                                 {% comment %} <textarea class="form-field" name="messageForm" id="messageForm" rows="6"
                                     placeholder="Your Message"></textarea> {% endcomment %}
                                 <div class="submit-area padding-onlytop-sm">
-                                    <input type="submit" id="submit" class="btn-alt active shadow"
-                                        value="Send Message">
+                                    <input type="submit" id="submit" class="btn-alt active shadow" value="Send Message">
                                     <div id="msg" class="message"></div>
                                 </div>
                             </div>
@@ -266,5 +266,6 @@
         <!-- END Map -->
 
     </div>
+
 </div>
 {% endblock content %}
