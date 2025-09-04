@@ -42,9 +42,9 @@ def contact(request):
                                 
                         # Send email
                         send_mail(
-                                f'{subject} {name}',
+                                f'from {name} {sender_email} {subject}',
                                 message,
-                                from_email=sender_email,
+                                sender_email,
                                 recipient_list=[settings.EMAIL_HOST_USER],
                                 fail_silently=False,
                         )
