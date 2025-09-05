@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('nanuapp.urls')),
+    path('captcha/', include('captcha.urls')),
     
     # installed django-browser-reload
     path("__reload__/", include("django_browser_reload.urls")),

@@ -39,7 +39,7 @@ def contact(request):
                         sender_email = form.cleaned_data['email']
                         subject = form.cleaned_data['subject']
                         message = form.cleaned_data['message']
-                                
+                              
                         # Send email
                         send_mail(
                                 f'from {name} {sender_email} {subject}',

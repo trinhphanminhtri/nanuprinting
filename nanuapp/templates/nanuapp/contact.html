@@ -97,8 +97,6 @@
                 <div class="text padding-md-top-null">
                     <form method="POST" id="contact-form" class="padding-md padding-md-topbottom-null">
                         {% csrf_token %}
-                        {% comment %} {{form.as_p}} {% endcomment %}
-
                         <!-- your name, email, subject, message -->
                         <div class="row">
                             <div class="col-md-4">
@@ -117,11 +115,19 @@
                         <div class="row">
                             <div class="col-md-12">
                                 {{form.message}}
-                                <div class="submit-area padding-onlytop-sm">
-                                    <input type="submit" id="submit" class="btn-alt active shadow" value="Send Message">
-                                    <div id="msg" class="message"></div>
-                                </div>
                             </div>
+                        </div>
+                        <!-- END your message -->
+
+                        <!-- CAPTCHA field -->
+                        <div class="row">
+                            <div class="col-md-3">{{form.captcha}}</div>
+                        </div>
+                        <!-- END CAPTCHA field -->
+
+                        <div class="submit-area padding-onlytop-sm">
+                            <input type="submit" class="btn-alt active shadow" value="Send Message">
+                            <div id="msg" class="message"></div>
                         </div>
                         <!-- END your message -->
                     </form>
@@ -214,18 +220,12 @@
                         <div class="row">
                             <div class="col-md-4">
                                 {{form.name}}
-                                {% comment %} <input class="form-field" name="name" id="name" type="text"
-                                    placeholder="Your name"> {% endcomment %}
                             </div>
                             <div class="col-md-4">
                                 {{form.email}}
-                                {% comment %} <input class="form-field" name="mail" id="mail" type="text"
-                                    placeholder="Your email"> {% endcomment %}
                             </div>
                             <div class="col-md-4">
                                 {{form.subject}}
-                                {% comment %} <input class="form-field" name="subjectForm" id="subjectForm" type="text"
-                                    placeholder="Subject"> {% endcomment %}
                             </div>
                         </div>
                         <!-- END your name, email, subject, message -->
@@ -234,14 +234,19 @@
                         <div class="row">
                             <div class="col-md-12">
                                 {{form.message}}
-                                {% comment %} <textarea class="form-field" name="messageForm" id="messageForm" rows="6"
-                                    placeholder="Your Message"></textarea> {% endcomment %}
-                                <div class="submit-area padding-onlytop-sm">
-                                    <input type="submit" id="submit-contact" class="btn-alt active shadow"
-                                        value="Send Message">
-                                    <div id="msg" class="message"></div>
-                                </div>
                             </div>
+                        </div>
+                        <!-- END your message -->
+
+                        <!-- CAPTCHA field -->
+                        <div class="row">
+                            <div class="col-md-3">{{form.captcha}}</div>
+                        </div>
+                        <!-- END CAPTCHA field -->
+
+                        <div class="submit-area padding-onlytop-sm">
+                            <input type="submit" class="btn-alt active shadow" value="Send Message">
+                            <div id="msg" class="message"></div>
                         </div>
                         <!-- END your message -->
                     </form>

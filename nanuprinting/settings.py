@@ -44,10 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-
-    # installed django-browser-reload
     'django.contrib.staticfiles',
-    'django_browser_reload',
+    'captcha',
+    'django_browser_reload', # installed django-browser-reload
     ]
 
 MIDDLEWARE = [
@@ -104,7 +103,6 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', 'True') == 'True'
 
-
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
@@ -149,3 +147,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# CAPTCHA settings
+# CAPTCHA_FONT_PATH = os.path.join(BASE_DIR, 'static/fonts/PlayfairDisplay.ttf')
+CAPTCHA_FONT_SIZE = 36
+CAPTCHA_FOREGROUND_COLOR = '#2c3e50'
+CAPTCHA_BACKGROUND_COLOR = '#ecf0f1'
+CAPTCHA_IMAGE_SIZE = (180, 60)
+CAPTCHA_LETTER_ROTATION = (-15, 15)
