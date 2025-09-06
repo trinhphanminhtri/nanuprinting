@@ -24,6 +24,12 @@ def portfolio(request):
     except:
             raise Http404()
 
+def standard_project(request):
+    try:
+            return render(request, 'nanuapp/standard-project.html',{'active_page':'portfolio'})
+    except:
+            raise Http404()
+
 def blog(request):
     try:
             return render(request, 'nanuapp/blog.html',{'active_page':'blog'})

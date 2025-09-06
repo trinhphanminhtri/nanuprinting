@@ -21,7 +21,8 @@
   </div>
   <!--  END Slider  -->
 
-  <div id="home-wrap" class="content-section fullpage-wrap">
+  <!-- Portfolio Wrap -->
+  <div id="portfolio-wrap" class="content-section fullpage-wrap">
     <!-- Section Legal Info -->
     <div class="row margin-leftright-null text-center">
       <div class="col-md-12 padding-leftright-null">
@@ -78,6 +79,7 @@
     </div>
     <!-- END Section Legal Info -->
 
+    <!-- Capacity & Equipments both factories -->
     <div class="row margin-leftright-null">
       <!-- Section with background image with overlay -->
       <div class="col-md-12 padding-leftright-null bg-img responsive overlay"
@@ -98,7 +100,7 @@
               <div class="col-sm-4 padding-md-leftright-null">
                 <div class="statistic">
                   <i class="icon ion-ios-pie-outline service big white margin-bottom-null"></i>
-                  <span class="white" data-from="0" data-to="10400000">&nbsp;</span>
+                  <span class="white" data-from="10000000" data-to="10400000">&nbsp;</span>
                   <p class="white">Capacity output pcs per month</p>
                   <p class="heading white">Screen printing process</p>
                   <p class="white">Print 1 color on a product</p>
@@ -107,7 +109,7 @@
               <div class="col-sm-4 padding-md-leftright-null">
                 <div class="statistic">
                   <i class="icon ion-ios-pie-outline service big white margin-bottom-null"></i>
-                  <span class="white" data-from="0" data-to="6890000">&nbsp;</span>
+                  <span class="white" data-from="6000000" data-to="6890000">&nbsp;</span>
                   <p class="white">Capacity output pcs per month</p>
                   <p class="heading white">Screen printing process</p>
                   <p class="white">Print 2 colors on a product</p>
@@ -116,7 +118,7 @@
               <div class="col-sm-4 padding-md-leftright-null">
                 <div class="statistic">
                   <i class="icon ion-ios-pie-outline service big white margin-bottom-null"></i>
-                  <span class="white" data-from="0" data-to="50000">&nbsp;</span>
+                  <span class="white" data-from="40000" data-to="50000">&nbsp;</span>
                   <p class="white">Capacity output meters per month</p>
                   <p class="heading white">Sublimation process</p>
                   <p class="white">Print Rolls</p>
@@ -125,7 +127,7 @@
               <div class="col-sm-4 padding-md-leftright-null">
                 <div class="statistic">
                   <i class="icon ion-ios-pie-outline service big white margin-bottom-null"></i>
-                  <span class="white" data-from="0" data-to="500000">&nbsp;</span>
+                  <span class="white" data-from="400000" data-to="500000">&nbsp;</span>
                   <p class="white">Capacity output pcs per month</p>
                   <p class="heading white">Heat Transfer process</p>
                   <p class="white"></p>
@@ -134,7 +136,7 @@
               <div class="col-sm-4 padding-md-leftright-null">
                 <div class="statistic">
                   <i class="icon ion-ios-pie-outline service big white margin-bottom-null"></i>
-                  <span class="white" data-from="0" data-to="260000">&nbsp;</span>
+                  <span class="white" data-from="200000" data-to="260000">&nbsp;</span>
                   <p class="white">Capacity output pcs per month</p>
                   <p class="heading white">Embossing - Debossing process</p>
                   <p class="white"></p>
@@ -148,377 +150,681 @@
       </div>
       <!-- END Section with background image with overlay -->
     </div>
+    <!-- END Capacity & Equipments both factories -->
 
-    <!-- Product catalogue title -->
+    <!-- Product catalogue -->
+    <div id="showcase-projects" class="text grey-background">
+      <div class="row">
+        <div class="col-md-12 padding-leftright-null text-center">
+          <h2 class="margin-bottom-null title grey">Our printing technology</h2>
+          <div class="padding-md">
+            <h3 class="grey big margin-bottom-small center">Main Technology of Printing</h3>
+            <p class="heading center margin-bottom grey">Our products meet the strict testing standards required by
+              our customers</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <section class="showcase-carousel">
+            <!--  Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item1.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">WATER PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %}" class="link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item2.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">CRACKING PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %}" class="link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item3.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">PLASTISOL PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %}" class="link"></a>
+              </div>
+            </div>
+            <!-- END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">HIGH DENSITY PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %}" class="link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">PU PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">SILICONE PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">PUFF PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">FOIL PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">FLOCKING PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">HEAT TRANSFER PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">SOLVENT PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">GLITTER PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">DISCHARGE PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">GLOW & DARK PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">REFLECTIVE PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">METALLIC SILVER PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">SUBLIMATION</h6>
+                  <p class="heading margin-null">Digital printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">EMBOSSING & DEBOSSING</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">METALLIC GOLD PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">RUBBER PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">PEARL PRINT</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+
+            <!-- Single Projects  -->
+            <div class="item">
+              <div class="showcase-project">
+                <img src="{% static 'nanuapp/img/item4.jpg' %}" alt="">
+                <div class="content">
+                  <span class="read">
+                    <i class="material-icons">add</i>
+                  </span>
+                  <h6 class="heading black">DIGITAL HYBRID PRINTING SYSTEM</h6>
+                  <p class="heading margin-null">Silk screen printing / Technology</p>
+                </div>
+                <a href="{% url 'standard-project' %} class=" link"></a>
+              </div>
+            </div>
+            <!--  END Single Projects  -->
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- END Product catalogue -->
+
+    <!-- Production brands -->
     <div class="row margin-leftright-null text-center">
       <div class="col-md-12 padding-leftright-null">
         <div class="text">
-          <h2 class="margin-bottom-null title center grey">Our printing technology</h2>
+          <h2 class="margin-bottom-null title center grey">PRODUCTION BRANDS</h2>
           <div class="padding-onlytop-md">
-            <h3 class="grey big margin-bottom-small">Main Technology of Printing</h3>
-            <p class="heading center margin-bottom-null grey">Our products meet the strict testing standards required by
-              our customers</p>
+            <h3 class="grey big margin-bottom-small">Our Production Partners</h3>
+            <p class="heading center margin-bottom-null grey">Trusted Cooperative & Long-term Substainability</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- END Product catalogue title -->
-
-    <!--  Content Section Full Page  -->
-    <section id="projects-filters" class="wrap-filters-minimal text-center">
-      <!--  Filters  -->
-      <div class="row">
-        <div class="col-sm-12">
-          <ul class="col-md-12 filters padding-leftright-null">
-            <li data-filter="*" class="is-checked">All</li>
-            <li data-filter=".water-print">Water print</li>
-            <li data-filter=".cracking-print">Cracking print</li>
-            <li data-filter=".plastisol-print">Plastisol print</li>
-            <li data-filter=".high-density-print">High density print</li>
-            <li data-filter=".PU-print">PU print</li>
-            <li data-filter=".silicone-print">Silicone print</li>
-            <li data-filter=".puff-print">Puff print</li>
-            <li data-filter=".foil-print">Foil print</li>
-            <li data-filter=".flocking-print">Flocking print</li>
-            <li data-filter=".heat-transfer-print">Heat transfer print</li>
-            <li data-filter=".solvent-print">Solvent print</li>
-            <li data-filter=".glitter-print">Glitter print</li>
-            <li data-filter=".discharge-print">Discharge print</li>
-            <li data-filter=".glow-dark-print">Glow and dark print</li>
-            <li data-filter=".reflective-print">Reflective print</li>
-            <li data-filter=".metallic-silver-print">Metallic silver print</li>
-            <li data-filter=".sublimation-digital-print">Sublimation/ Digital print</li>
-            <li data-filter=".embossing-debossing-print">Embossing & Debossing print</li>
-            <li data-filter=".metallic-gold-print">Metallic gold print</li>
-            <li data-filter=".rubber-print">Rubber print</li>
-            <li data-filter=".pearl-print">Pearl print</li>
-            <li data-filter=".digital-hydrid-printing-system">Digital Hybrid printing system</li>
-          </ul>
+    <section id="news" class="page">
+      <div class="news-items equal four-columns">
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/01.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/02.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/03.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/04.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/05.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/06.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/07.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/08.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/09.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/10.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/11.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/12.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/13.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/14.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/15.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/16.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/17.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/18.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/19.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/20.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/21.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/22.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/23.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/24.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/25.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/26.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/27.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/28.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/29.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/30.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/31.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/32.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/33.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/34.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/35.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/36.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/37.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/38.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/39.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/40.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/41.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/42.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/43.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/44.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/45.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/46.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
+        </div>
+        <div class="single-news one-item">
+          <article class="dark-background">
+            <img src="{% static 'nanuapp/img/partners/47.png' %}" alt="">
+            <a href="{% url 'standard-project' %}" class="link"></a> 
+          </article>
         </div>
       </div>
-      <!--  END Filters  -->
     </section>
-
-    <!--  Projects Section  -->
-    <section id="projects" data-isotope="load-simple">
-      <div class="projects-items equal four-columns">
-        <div class="one-item water-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Water base</h3>
-            </div>
-            <a href="standard-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item cracking-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Cracking</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item plastisol-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Plastisol</h3>
-            </div>
-            <a href="standard-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item high-density-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">High density</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item PU-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">PU print</h3>
-            </div>
-            <a href="standard-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item silicone-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Silicone</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item puff-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Puff</h3>
-            </div>
-            <a href="standard-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item foil-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Foil / Technology</h4>
-              <h3 class="big">Foil</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item flocking-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Flocking</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item heat-transfer-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Heat Transfer / Technology</h4>
-              <h3 class="big">Heat Transfer</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item solvent-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Solvent</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item glitter-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Glitter / Technology</h4>
-              <h3 class="big">Glitter</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item discharge-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Discharge</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item glow-dark-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Glow Dark</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item reflective-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Reflective</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item metallic-silver-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Silver</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item sublimation-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Digital / Technology</h4>
-              <h3 class="big">Sublimation</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item digital-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Digital / Technology</h4>
-              <h3 class="big">Digital Print</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item embossing-debossing-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Embossing / Technology</h4>
-              <h3 class="big">Embossing</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item metallic-gold-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})">
-          </div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Metallic / Technology</h4>
-              <h3 class="big">Metallic Gold</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item rubber-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Rubber</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item pearl-print">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Silk screen printing / Technology</h4>
-              <h3 class="big">Pearl</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-        <div class="one-item digital-hydrid-printing-system">
-          <div class="image-bg" style="background-image:url({% static 'nanuapp/img/portfolio/item1.jpg' %})"></div>
-          <div class="content">
-            <span class="icon">
-              <i class="material-icons">add</i>
-            </span>
-            <div class="text">
-              <h4>Digital / Technology</h4>
-              <h3 class="big">Digital Hydrid</h3>
-            </div>
-            <a href="gallery-project.html" class="link"></a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!--  END Projects Section  -->
+    <!-- END Production brands -->
 
   </div>
+  <!-- END Portfolio Wrap -->
 
 </div>
-<!--  END Page Content -->
+<!-- END Page Content, class footer-fixed if footer is fixed  -->
 {% endblock content %}
